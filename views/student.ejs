@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Про студента</title>
+</head>
+<body>
+    <h1>Студент: <%= student.name %></h1>
+    <p>Роль: <%= student.role %></p>
+		<p>Біографія: <%= student.bio %></p>
+		<p>Навички: <%= student.skills.join(', ') %></p>
+
+    <a href="/">Повернутися на головну сторінку</a>
+</body>
+</html>
