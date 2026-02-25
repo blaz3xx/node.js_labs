@@ -1,0 +1,88 @@
+/* Основні налаштування шрифтів та фону */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f4f7f6;
+}
+
+/* Заголовок сторінки */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* Стилізація зображення */
+img {
+    display: block;
+    margin: 0 auto 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+/* Секція складу команди */
+h2 {
+    color: #2980b9;
+    margin-top: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-left: 5px solid #3498db;
+    transition: background 0.2s;
+}
+
+li:hover {
+    background: #ebf5fb;
+}
+
+/* Стилізація посилань у списку */
+li a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 600;
+    display: block;
+}
+
+/* Футер/Корисний ресурс */
+p {
+    margin-top: 40px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+p a {
+    color: #e67e22;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px dashed #e67e22;
+}
+
+p a:hover {
+    color: #d35400;
+    border-bottom-style: solid;
+}
