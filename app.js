@@ -46,19 +46,14 @@ const teamInfoData = {
 
 app.get('/student/:id', (req, res) => {
     
-    // Отримуємо ID з адреси (наприклад, з /student/2 беремо "2")
     const studentId = parseInt(req.params.id);
 
-    // Шукаємо студента в масиві
     const foundStudent = teamInfoData[studentId];
 
-    // Перевірка на помилку 
     if (!foundStudent) {
-        // Можна відрендерити сторінку помилки або просто надіслати текст
-        return res.status(404).send('<h1>Помилка 404: Такого студента у нас немає :(</h1><a href="/">На головну</a>');
+    	return res.status(404).render('error');
     }
 
-    // Якщо знайшли — рендеримо шаблон 'student.ejs' і передаємо дані
     res.render('student', { student: foundStudent });
 });
 
